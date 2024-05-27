@@ -1,5 +1,4 @@
 # vigeneire cypher
-
 def vigeneire_encrypt_cypher(text, key):
     encrypted_text = ""
     key_index = 0
@@ -23,7 +22,7 @@ def vigeneire_encrypt_cypher(text, key):
 
 
 # usage
-text = "Hello, World!"
-key = "keys"
+text = "Hello my name is pesho!"
+key = "viltrum"
 encrypted_text_to_print = vigeneire_encrypt_cypher(text, key)
 print("Encrypted text:", encrypted_text_to_print)
