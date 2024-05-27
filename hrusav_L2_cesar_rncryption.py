@@ -40,3 +40,5 @@ text2 = "Hello, Worldasdasda!"
 shift2 = 4
 encrypted_text2 = caesar_encrypt(text2, shift2)
 print("Encrypted text:", encrypted_text2)
+
+# test for gpg
