@@ -25,7 +25,7 @@ def quadratic_eqution_solver(a, b, c):
         return "special case"
 
 
-# here we will have to interract with humans so command line
+# here we will have to interract with humans, so command line explanations
 if len(sys.argv) != 4:
     print("Write aguments for a, b and c, please")
     print("The way to do it is python3 hrusav_L1_T5.py <a> <b> <c>")
