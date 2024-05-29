@@ -1,4 +1,7 @@
 # third task
+# importing sys again
+import sys
+
 
 # create function to check if there is repetition
 def repetition_detected(target_list):
@@ -6,11 +9,17 @@ def repetition_detected(target_list):
 
     for item in target_list:
         if item in encountered_element:
-            return True
+            return "True"
         encountered_element.add(item)
-    return False
+    return "False"
 
 
+if __name__ == "__main__":
+    input_list = sys.argv[1:]
+
+    print(repetition_detected(input_list))
+
+"""
 # check if function is functioning correctly
 first_list = [1, 2, 3, 4, 5]
 second_list = [1, 2, 3, 4, 1]
@@ -26,3 +35,4 @@ print("List3:", "repeats" if repetition_detected(third_list) else "no repeat")
 print("List4:", "repeats" if repetition_detected(fourth_list) else "no repeat")
 print("List5:", "repeats" if repetition_detected(fifth_list) else "no repeat")
 print("List6:", "repeats" if repetition_detected(sixth_list) else "no repeat")
+"""

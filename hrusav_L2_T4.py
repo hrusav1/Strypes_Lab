@@ -1,22 +1,32 @@
 # task four
 
-def exclude_repetition(input_list) -> list:
+import sys
+
+
+def exclude_repetition(sys_argv_list) -> list:
+    sorted_list = sorted(sys_argv_list)
     
     encountered_element = set()
     exclusive_list = []
 
-    for item in input_list:
+    for item in sorted_list:
 
         if item not in encountered_element:
             exclusive_list.append(item)
             encountered_element.add(item)
 
-        elif item in exclusive_list:
-            exclusive_list.remove(item)
+    #    elif item in exclusive_list:
+        #    exclusive_list.remove(item)
 
     return exclusive_list
 
 
+if __name__ == "__main__":
+    input_list = sys.argv[1:]
+
+    print("[" + ", ".join(exclude_repetition(input_list)) + "]")
+
+"""
 # Test
 example_list_one = [1, 2, 3, 1, 4, 5, 2, 6]
 example_list_two = ['a', '1', 'b', '2', 'c', '3']
@@ -32,3 +42,4 @@ print("Non-repeating elements:", result_one)
 print("Non-repeating elements:", result_two)
 print("Non-repeating elements:", result_three)
 print("Non-repeating elements:", result_four)
+"""
