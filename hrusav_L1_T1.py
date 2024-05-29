@@ -1,18 +1,45 @@
-# this is the first programm
-example_list_1 = [1, 2, 2]
-example_list_2 = ['b', 'a']
+# task 5
+
+# in this case we will need some imports
+import sys
+import math
 
 
-# this is a function to check if a list is ordered or not
-def is_list_ordered(unknown_list):
+def quadratic_eqution_solver(a, b, c):
+    # Discriminant / Solve for D
+    D = b**2 - 4*a*c
 
-    for i in range(len(unknown_list) - 1):
+    # in case there are two real roots so there is an x1 and x2
+    if D > 0:
+        x1 = (-b + math.sqrt(D)) / (2*a)
+        x2 = (-b - math.sqrt(D)) / (2*a)
+        return f"{x1:.2f}|{x2:.2f}"
 
-        if str(unknown_list[i]) > str(unknown_list[i + 1]):
-            return False
+    # in case there is only one real root so only x1 is real
+    elif D == 0:
+        x = -b / (2*a)
+        return f"{x:.2f}"
 
-    return True
+    # in case there are no real roots
+    else:
+        return "special case"
 
 
-print(is_list_ordered(example_list_1))
-print(is_list_ordered(example_list_2))
+# here we will have to interract with humans, so command line explanations
+if len(sys.argv) != 4:
+    print("Write aguments for a, b and c, please")
+    print("The way to do it is python3 hrusav_L1_T5.py <a> <b> <c>")
+    print("a b and c are the exponents and are to be written without the <>")
+    sys.exit(1)
+
+try:
+    a = float(sys.argv[1])
+    b = float(sys.argv[2])
+    c = float(sys.argv[3])
+except ValueError:
+    print("Coefficients must be numbers and may be floats.")
+    sys.exit(1)
+
+# test the function
+result = quadratic_eqution_solver(a, b, c)
+print(result)
