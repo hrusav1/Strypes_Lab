@@ -6,6 +6,15 @@ import math
 
 
 def quadratic_eqution_solver(a, b, c):
+
+    # in case a is zero, it's not a quadratic equation
+    if a == 0:
+        return "Not a quadratic equation"
+
+    # in case both 'b' and 'c' are zero there are infinite real roots
+    if b == 0 and c == 0:
+        return "special case"
+
     # Discriminant / Solve for D
     D = b**2 - 4*a*c
 
@@ -22,7 +31,7 @@ def quadratic_eqution_solver(a, b, c):
 
     # in case there are no real roots
     else:
-        return "special case"
+        return "no real roots"
 
 
 # here we will have to interract with humans, so command line explanations
