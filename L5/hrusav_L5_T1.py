@@ -22,6 +22,7 @@ def fibonacci_calsulator(n, memory={}):
         return memory[n]
     if n <= 2:
         return 1
+
     memory[n] = fibonacci_calsulator(n-1, memory) + fibonacci_calsulator(n-2, memory)
 
     return memory[n]
