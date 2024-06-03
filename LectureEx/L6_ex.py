@@ -1,5 +1,5 @@
 class SchoolMember:
-    
+
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -8,8 +8,22 @@ class SchoolMember:
         return f"Name: {self.name}, Age: {self.age}"
 
 
+class Branch_Manager(SchoolMember):
+
+    def __init__(self, name, age, salary):
+        super().__init__(name, age)
+        self.salary = salary
+        self.branch_leader_of = []
+
+    def add_branch(self, branch):
+        self.branch_leader_of.append(branch)
+
+    def __str__(self):
+        return f"Branch Manager: {super().__str__()}, Salary: {self.salary}, Brach: {', '.join(self.branch_leader_of)}"
+
+
 class Teacher(SchoolMember):
-    
+
     def __init__(self, name, age, salary):
         super().__init__(name, age)
         self.salary = salary
@@ -23,7 +37,7 @@ class Teacher(SchoolMember):
 
 
 class Student(SchoolMember):
-    
+
     def __init__(self, name, age):
         super().__init__(name, age)
         self.courses = {}
@@ -65,3 +79,10 @@ student2.enroll_course("Selling Crack", 1983)
 student2.add_grade("Selling Crack", 6)
 print(student2)
 print("That boy be slanging rock!!")
+
+branch_manager = Branch_Manager("Walter White", 53, 20000000)
+branch_manager.add_branch("Cooking METH")
+branch_manager.add_branch("Teaching Jessy")
+branch_manager.add_branch("Killing rivals")
+branch_manager.add_branch("Being the one who knocks")
+print(branch_manager)
