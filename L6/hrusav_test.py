@@ -83,20 +83,24 @@ class Student(SchoolMember):
 if __name__ == "__main__":
     # Създаване на обект Teacher
     teacher = Teacher('Andonov', 30, 3000)
-    print("Заплата на учителя:", teacher.getSalary())
+    print("Print from getSalary: ", teacher.getSalary())
     teacher.addCourse('CSCB101', 'Introduction to Computer Science')
     teacher.addCourse('MATH123', 'Calculus I')
-    print("Курсове на учителя:")
+    print("Printing from getCourses:")
     teacher.getCourses()
 
     # Създаване на обект Student
     student = Student('Petrov', 21)
     student.attendCourse('CSCB101', 2013)
+    print("before adding grades")
+    student.getCourses()
     student.addGrade('CSCB101', 3)
+    student.addGrade('NonExistant course', 2)
     student.addGrade('CSCB101', 4)
     student.attendCourse('MATH123', 2014)
     student.addGrade('MATH123', 5)
     print("Курсове на студента:")
+    print("After adding grade")
     student.getCourses()
     print("Средна оценка по CSCB101:", student.getAvgGrade('CSCB101'))
     print("Средна оценка по MATH123:", student.getAvgGrade('MATH123'))
