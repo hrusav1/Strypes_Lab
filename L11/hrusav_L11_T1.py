@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+import re
 from math import sqrt, factorial
 
 class CalculatorModel:
@@ -36,10 +37,22 @@ class CalculatorModel:
         return str(-float(value)) if value else ""
 
     def calculate(self, expression):
-        try:
-            return str(eval(expression))
-        except Exception:
+        operators = {'+': lambda x, y: x + y,
+                     '-': lambda x, y: x - y,
+                     '*': lambda x, y: x * y,
+                     '/': lambda x, y: x / y}
+
+        tokens = re.findall(r'[+-/*]|\d+', expression)
+        if not tokens or tokens[0] in operators or tokens[-1] in operators:
             raise ValueError("Invalid input")
+
+        result = float(tokens[0])
+        for i in range(1, len(tokens), 2):
+            operator = tokens[i]
+            operand = float(tokens[i + 1])
+            result = operators[operator](result, operand)
+
+        return str(result)
 
     def square_root(self, value):
         try:
