@@ -67,7 +67,7 @@ display = tk.Entry(root, font=("Arial", 20), bd=10, insertwidth=2, width=14, bor
 display.grid(row=1, column=0, columnspan=4)
 
 # Memory display
-tk.Label(root, text="Memory", font=("Arial", 14)).grid(row=0, column=4)
+tk.Label(root, text="Memory", font=("Arial", 14)).grid(row=3, column=4)
 memory_display = tk.Listbox(root, font=("Arial", 12), height=10, width=20, bd=5)
 memory_display.grid(row=1, column=4, rowspan=10)
 
