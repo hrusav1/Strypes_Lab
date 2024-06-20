@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-import re
 from math import sqrt, factorial
 
 class CalculatorModel:
@@ -8,23 +7,11 @@ class CalculatorModel:
         self.memory = []
         self.current_value = ""
 
-    def add_to_memory(self, value):
-        try:
-            self.memory.append(float(value))
-        except ValueError:
-            raise ValueError("Invalid input")
-
-    def subtract_from_memory(self, value):
-        try:
-            self.memory.append(-float(value))
-        except ValueError:
-            raise ValueError("Invalid input")
-
     def clear_memory(self):
         self.memory = []
 
     def recall_memory(self):
-        return sum(self.memory) if self.memory else 0
+        return self.format_result(sum(self.memory)) if self.memory else "0"
 
     def clear_entry(self):
         self.current_value = ""
@@ -37,35 +24,50 @@ class CalculatorModel:
         return str(-float(value)) if value else ""
 
     def calculate(self, expression):
-        operators = {'+': lambda x, y: x + y,
-                     '-': lambda x, y: x - y,
-                     '*': lambda x, y: x * y,
-                     '/': lambda x, y: x / y}
-
-        tokens = re.findall(r'[+-/*]|\d+', expression)
-        if not tokens or tokens[0] in operators or tokens[-1] in operators:
-            raise ValueError("Invalid input")
-
-        result = float(tokens[0])
-        for i in range(1, len(tokens), 2):
-            operator = tokens[i]
-            operand = float(tokens[i + 1])
-            result = operators[operator](result, operand)
-
-        return str(result)
+        operators = ['+', '-', '*', '/']
+        for operator in operators:
+            if operator in expression:
+                try:
+                    left, right = expression.split(operator)
+                    left = float(left)
+                    right = float(right)
+                    if operator == '+':
+                        return self.format_result(left + right)
+                    elif operator == '-':
+                        return self.format_result(left - right)
+                    elif operator == '*':
+                        return self.format_result(left * right)
+                    elif operator == '/':
+                        if right != 0:
+                            return self.format_result(left / right)
+                        else:
+                            return "inf"  # Handle division by zero
+                except ValueError:
+                    raise ValueError("Invalid input")
+        raise ValueError("Invalid input")
 
     def square_root(self, value):
         try:
-            return str(sqrt(float(value)))
+            return self.format_result(sqrt(float(value)))
         except ValueError:
             raise ValueError("Invalid input")
 
     def calculate_factorial(self, value):
         try:
-            return str(factorial(int(value)))
+            return self.format_result(factorial(int(value)))
         except ValueError:
             raise ValueError("Invalid input")
 
+    def add_to_memory(self, value):
+        self.memory.append(float(value))
+
+    def subtract_from_memory(self, value):
+        self.memory.append(-float(value))
+
+    def format_result(self, result):
+        if isinstance(result, float) and result.is_integer():
+            result = int(result)
+        return str(result) if isinstance(result, int) else f"{result:.5g}"
 
 # Initialize main window
 root = tk.Tk()
@@ -75,14 +77,21 @@ root.title("Calculator")
 calculator = CalculatorModel()
 
 # Display
-tk.Label(root, text="Display", font=("Arial", 14)).grid(row=0, column=0, columnspan=4)
-display = tk.Entry(root, font=("Arial", 20), bd=10, insertwidth=2, width=14, borderwidth=4, justify='right')
-display.grid(row=1, column=0, columnspan=4)
+tk.Label(root, text="Display", font=("Arial", 14)).grid(row=0, column=0, columnspan=6)
+display = tk.Entry(root, font=("Arial", 20), bd=10, insertwidth=2, width=28, borderwidth=4, justify='right')
+display.grid(row=1, column=0, columnspan=6)
 
 # Memory display
-tk.Label(root, text="Memory", font=("Arial", 14)).grid(row=3, column=4)
+tk.Label(root, text="Memory", font=("Arial", 14)).grid(row=3, column=6)
 memory_display = tk.Listbox(root, font=("Arial", 12), height=10, width=20, bd=5)
-memory_display.grid(row=1, column=4, rowspan=10)
+memory_display.grid(row=1, column=6, rowspan=10)
+
+# Prevent pasting into the display
+def disable_paste(event):
+    return "break"
+
+display.bind("<Control-v>", disable_paste)
+display.bind("<Control-V>", disable_paste)
 
 # Functions
 def btn_click(item):
@@ -104,28 +113,32 @@ def calculate():
         result = calculator.calculate(display.get())
         display.delete(0, tk.END)
         display.insert(0, result)
+        return result
     except ValueError as e:
         messagebox.showerror("Error", str(e))
+        return None
 
 def memory_clear():
     calculator.clear_memory()
     update_memory_display()
 
 def memory_plus():
-    try:
-        calculator.add_to_memory(display.get())
-        display.delete(0, tk.END)
-        update_memory_display()
-    except ValueError as e:
-        messagebox.showerror("Error", str(e))
+    if display.get():
+        result = calculate()  # Perform the calculation
+        if result is not None:
+            calculator.add_to_memory(result)
+            update_memory_display()
+    else:
+        messagebox.showinfo("Usage Error", "Use the m+ button after performing a calculation. For example:\n1. Enter '5*5'\n2. Press '='\n3. Press 'm+' to store 25 in memory.")
 
 def memory_minus():
-    try:
-        calculator.subtract_from_memory(display.get())
-        display.delete(0, tk.END)
-        update_memory_display()
-    except ValueError as e:
-        messagebox.showerror("Error", str(e))
+    if display.get():
+        result = calculate()  # Perform the calculation
+        if result is not None:
+            calculator.subtract_from_memory(result)
+            update_memory_display()
+    else:
+        messagebox.showinfo("Usage Error", "Use the m- button after performing a calculation. For example:\n1. Enter '5*5'\n2. Press '='\n3. Press 'm+' to store 25 in memory.\n4. Enter '5+5'\n5. Press '='\n6. Press 'm-' to subtract 10 from memory.")
 
 def memory_recall():
     display.delete(0, tk.END)
@@ -134,7 +147,7 @@ def memory_recall():
 def update_memory_display():
     memory_display.delete(0, tk.END)
     for i, mem in enumerate(calculator.memory):
-        memory_display.insert(tk.END, f"{i+1}: {mem}")
+        memory_display.insert(tk.END, f"{i+1}: {calculator.format_result(mem)}")
 
 def change_sign():
     try:
@@ -147,17 +160,21 @@ def change_sign():
 
 def square_root():
     try:
-        result = calculator.square_root(display.get())
-        display.delete(0, tk.END)
-        display.insert(0, result)
+        value = display.get()
+        if value:
+            result = calculator.square_root(value)
+            display.delete(0, tk.END)
+            display.insert(0, result)
     except ValueError as e:
         messagebox.showerror("Error", str(e))
 
 def calculate_factorial():
     try:
-        result = calculator.calculate_factorial(display.get())
-        display.delete(0, tk.END)
-        display.insert(0, result)
+        value = display.get()
+        if value:
+            result = calculator.calculate_factorial(value)
+            display.delete(0, tk.END)
+            display.insert(0, result)
     except ValueError as e:
         messagebox.showerror("Error", str(e))
 
@@ -200,7 +217,7 @@ for i in range(4):
         buttons[i * 4 + j].grid(row=i + 2, column=j)
 
 for i in range(len(memory_buttons)):
-    buttons[16 + i].grid(row=6 + i // 3, column=i % 3)
+    buttons[16 + i].grid(row=6 + i // 3, column=i % 3, columnspan=1)
 
 if __name__ == "__main__":
     # Run the application
