@@ -1,0 +1,47 @@
+{
+    "movies": [
+        {
+            "title": "Titanik",
+            "studio": "",
+            "director": "",
+            "year": "",
+            "main_characters": "",
+            "genre": "",
+            "resolution": ""
+        }
+    ],
+    "games": [
+        {
+            "Title": "New game",
+            "Company": "",
+            "Genre": "",
+            "Platform": "",
+            "Release Date": ""
+        },
+        {
+            "Title": "New Game 2",
+            "Company": "",
+            "Genre": "",
+            "Platform": "",
+            "Release Date": ""
+        },
+        {
+            "Title": "Delete me ",
+            "Company": "",
+            "Genre": "",
+            "Platform": "",
+            "Release Date": ""
+        }
+    ],
+    "books": [
+        {
+            "Title": "delete me ",
+            "Author": "",
+            "Published Date": "",
+            "Genre": "",
+            "Edition": "",
+            "Language": "",
+            "Publisher": ""
+        }
+    ]
+}
