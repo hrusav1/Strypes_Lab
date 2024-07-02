@@ -82,7 +82,11 @@
             "writer": "",
             "main_cast": "",
             "supporting_cast": "",
-            "Genres": [],
+            "Genres": [
+                "Action",
+                "Adventure",
+                "Comedy"
+            ],
             "tagline": "",
             "budget": "",
             "box_office": "",
@@ -514,9 +518,8 @@
             "isbn": "",
             "language": "",
             "Genres": [
-                "True Crime",
-                "Essay",
-                "Travel"
+                "Adventure",
+                "Gothic"
             ],
             "tags": "",
             "series_info": ""
@@ -539,19 +542,6 @@
             "description": "",
             "image_path": "",
             "author": "me myself and I",
-            "publisher": "",
-            "publication_date": "",
-            "isbn": "",
-            "language": "",
-            "Genres": [],
-            "tags": "",
-            "series_info": ""
-        },
-        {
-            "title": "New Book",
-            "description": "",
-            "image_path": "",
-            "author": "",
             "publisher": "",
             "publication_date": "",
             "isbn": "",
