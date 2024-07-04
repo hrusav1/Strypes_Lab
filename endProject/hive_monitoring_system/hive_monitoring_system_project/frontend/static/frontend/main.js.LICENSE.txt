@@ -1,3 +1,645 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Actions.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButton.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButton1.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButtons.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButtons1.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./AuthButtons.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./ContactInfo.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Content.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Content1.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./FormContainer.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./HumidityDetails.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Navigation.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./NewPasswordForm.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Page.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root1.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root10.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root2.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root3.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root4.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root5.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root6.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root7.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root8.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./Root9.module.css */
+
+/*! !!../../node_modules/css-loader/dist/cjs.js!./TemperatureGraph.module.css */
+
+/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/api.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */
+
+/*! ../../utils/createSvgIcon */
+
+/*! ../Backdrop */
+
+/*! ../ClassNameGenerator */
+
+/*! ../Fade */
+
+/*! ../FilledInput */
+
+/*! ../FormControl */
+
+/*! ../FormControl/FormControlContext */
+
+/*! ../FormControl/formControlState */
+
+/*! ../FormControl/useFormControl */
+
+/*! ../FormHelperText */
+
+/*! ../FormLabel */
+
+/*! ../GlobalStyles */
+
+/*! ../Grow */
+
+/*! ../Input */
+
+/*! ../InputBase */
+
+/*! ../InputBase/InputBase */
+
+/*! ../InputBase/utils */
+
+/*! ../InputLabel */
+
+/*! ../List */
+
+/*! ../Menu/Menu */
+
+/*! ../MenuList */
+
+/*! ../Modal */
+
+/*! ../NativeSelect/NativeSelectInput */
+
+/*! ../OutlinedInput */
+
+/*! ../Paper */
+
+/*! ../Popover */
+
+/*! ../Portal */
+
+/*! ../Select */
+
+/*! ../SvgIcon */
+
+/*! ../Unstable_TrapFocus */
+
+/*! ../_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.esm.js */
+
+/*! ../base/dist/emotion-styled-base.browser.esm.js */
+
+/*! ../borders */
+
+/*! ../breakpoints */
+
+/*! ../chainPropTypes */
+
+/*! ../colors/blue */
+
+/*! ../colors/common */
+
+/*! ../colors/green */
+
+/*! ../colors/grey */
+
+/*! ../colors/lightBlue */
+
+/*! ../colors/orange */
+
+/*! ../colors/purple */
+
+/*! ../colors/red */
+
+/*! ../components/Actions */
+
+/*! ../components/AnalyticsButton */
+
+/*! ../components/AnalyticsButton1 */
+
+/*! ../components/AnalyticsButtons */
+
+/*! ../components/AnalyticsButtons1 */
+
+/*! ../components/AuthButtons */
+
+/*! ../components/ContactInfo */
+
+/*! ../components/Content */
+
+/*! ../components/Content1 */
+
+/*! ../components/FormContainer */
+
+/*! ../components/HumidityDetails */
+
+/*! ../components/NewPasswordForm */
+
+/*! ../components/TemperatureGraph */
+
+/*! ../cssGrid */
+
+/*! ../generateUtilityClass */
+
+/*! ../internal/svg-icons/ArrowDropDown */
+
+/*! ../merge */
+
+/*! ../ownerDocument */
+
+/*! ../palette */
+
+/*! ../setRef */
+
+/*! ../sizing */
+
+/*! ../spacing */
+
+/*! ../style */
+
+/*! ../styleFunctionSx/defaultSxConfig */
+
+/*! ../styleFunctionSx/styleFunctionSx */
+
+/*! ../styles/defaultTheme */
+
+/*! ../styles/getOverlayAlpha */
+
+/*! ../styles/identifier */
+
+/*! ../styles/styled */
+
+/*! ../styles/useTheme */
+
+/*! ../styles/useThemeProps */
+
+/*! ../transitions/utils */
+
+/*! ../useEnhancedEffect */
+
+/*! ../useLazyRef/useLazyRef */
+
+/*! ../useOnMount/useOnMount */
+
+/*! ../useTheme */
+
+/*! ../utils */
+
+/*! ../utils/capitalize */
+
+/*! ../utils/debounce */
+
+/*! ../utils/getScrollbarSize */
+
+/*! ../utils/isMuiElement */
+
+/*! ../utils/ownerDocument */
+
+/*! ../utils/ownerWindow */
+
+/*! ../utils/useControlled */
+
+/*! ../utils/useEnhancedEffect */
+
+/*! ../utils/useForkRef */
+
+/*! ./Actions.module.css */
+
+/*! ./AnalyticsButton.module.css */
+
+/*! ./AnalyticsButton1.module.css */
+
+/*! ./AnalyticsButtons.module.css */
+
+/*! ./AnalyticsButtons1.module.css */
+
+/*! ./App */
+
+/*! ./AuthButtons.module.css */
+
+/*! ./ContactInfo.module.css */
+
+/*! ./Content.module.css */
+
+/*! ./Content1.module.css */
+
+/*! ./Enum.js */
+
+/*! ./FormContainer.module.css */
+
+/*! ./FormControlContext */
+
+/*! ./GlobalStyles */
+
+/*! ./HumidityDetails.module.css */
+
+/*! ./ListContext */
+
+/*! ./ModalManager */
+
+/*! ./Navigation */
+
+/*! ./Navigation.module.css */
+
+/*! ./NewPasswordForm.module.css */
+
+/*! ./NotchedOutline */
+
+/*! ./Page.module.css */
+
+/*! ./Prefixer.js */
+
+/*! ./Root.module.css */
+
+/*! ./Root1.module.css */
+
+/*! ./Root10.module.css */
+
+/*! ./Root2.module.css */
+
+/*! ./Root3.module.css */
+
+/*! ./Root4.module.css */
+
+/*! ./Root5.module.css */
+
+/*! ./Root6.module.css */
+
+/*! ./Root7.module.css */
+
+/*! ./Root8.module.css */
+
+/*! ./Root9.module.css */
+
+/*! ./SelectInput */
+
+/*! ./Serializer.js */
+
+/*! ./StyledEngineProvider */
+
+/*! ./TemperatureGraph.module.css */
+
+/*! ./Tokenizer.js */
+
+/*! ./TransitionGroupContext */
+
+/*! ./Utility.js */
+
+/*! ./appendOwnerState */
+
+/*! ./applyStyles */
+
+/*! ./backdropClasses */
+
+/*! ./breakpoints */
+
+/*! ./capitalize */
+
+/*! ./checkPropTypes */
+
+/*! ./cjs/react-dom.development.js */
+
+/*! ./cjs/react-is.development.js */
+
+/*! ./cjs/react-jsx-runtime.development.js */
+
+/*! ./cjs/react.development.js */
+
+/*! ./cjs/scheduler.development.js */
+
+/*! ./clamp */
+
+/*! ./compose */
+
+/*! ./config */
+
+/*! ./createBreakpoints */
+
+/*! ./createMixins */
+
+/*! ./createPalette */
+
+/*! ./createSpacing */
+
+/*! ./createTheme */
+
+/*! ./createTransitions */
+
+/*! ./createTypography */
+
+/*! ./deepmerge */
+
+/*! ./defaultSxConfig */
+
+/*! ./defaultTheme */
+
+/*! ./emotion-element-43c6fea0.browser.esm.js */
+
+/*! ./extendSxProp */
+
+/*! ./extractEventHandlers */
+
+/*! ./factoryWithTypeCheckers */
+
+/*! ./filledInputClasses */
+
+/*! ./formControlClasses */
+
+/*! ./formHelperTextClasses */
+
+/*! ./formLabelClasses */
+
+/*! ./formatMuiErrorMessage */
+
+/*! ./getDisplayName */
+
+/*! ./getThemeProps */
+
+/*! ./identifier */
+
+/*! ./inputBaseClasses */
+
+/*! ./inputClasses */
+
+/*! ./inputLabelClasses */
+
+/*! ./isHostComponent */
+
+/*! ./lib/ReactPropTypesSecret */
+
+/*! ./lib/has */
+
+/*! ./listClasses */
+
+/*! ./memoize */
+
+/*! ./menuClasses */
+
+/*! ./merge */
+
+/*! ./mergeSlotProps */
+
+/*! ./modalClasses */
+
+/*! ./nativeSelectClasses */
+
+/*! ./omitEventHandlers */
+
+/*! ./outlinedInputClasses */
+
+/*! ./pages/Page */
+
+/*! ./pages/Root */
+
+/*! ./pages/Root1 */
+
+/*! ./pages/Root10 */
+
+/*! ./pages/Root2 */
+
+/*! ./pages/Root3 */
+
+/*! ./pages/Root4 */
+
+/*! ./pages/Root5 */
+
+/*! ./pages/Root6 */
+
+/*! ./pages/Root7 */
+
+/*! ./pages/Root8 */
+
+/*! ./pages/Root9 */
+
+/*! ./paperClasses */
+
+/*! ./popoverClasses */
+
+/*! ./resolveComponentProps */
+
+/*! ./responsivePropType */
+
+/*! ./rootShouldForwardProp */
+
+/*! ./selectClasses */
+
+/*! ./setPrototypeOf.js */
+
+/*! ./shadows */
+
+/*! ./shape */
+
+/*! ./slotShouldForwardProp */
+
+/*! ./spacing */
+
+/*! ./style */
+
+/*! ./styleFunctionSx */
+
+/*! ./svgIconClasses */
+
+/*! ./textFieldClasses */
+
+/*! ./useThemeWithoutDefault */
+
+/*! ./utils */
+
+/*! ./utils/PropTypes */
+
+/*! ./utils/reflow */
+
+/*! ./zIndex */
+
+/*! @babel/runtime/helpers/esm/extends */
+
+/*! @babel/runtime/helpers/esm/inheritsLoose */
+
+/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */
+
+/*! @babel/runtime/helpers/extends */
+
+/*! @babel/runtime/helpers/interopRequireDefault */
+
+/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */
+
+/*! @emotion/cache */
+
+/*! @emotion/hash */
+
+/*! @emotion/is-prop-valid */
+
+/*! @emotion/memoize */
+
+/*! @emotion/react */
+
+/*! @emotion/serialize */
+
+/*! @emotion/sheet */
+
+/*! @emotion/styled */
+
+/*! @emotion/unitless */
+
+/*! @emotion/use-insertion-effect-with-fallbacks */
+
+/*! @emotion/utils */
+
+/*! @emotion/weak-memoize */
+
+/*! @mui/base */
+
+/*! @mui/base/unstable_useModal */
+
+/*! @mui/base/utils */
+
+/*! @mui/material */
+
+/*! @mui/styled-engine */
+
+/*! @mui/system */
+
+/*! @mui/system/RtlProvider */
+
+/*! @mui/system/colorManipulator */
+
+/*! @mui/system/createStyled */
+
+/*! @mui/system/createTheme */
+
+/*! @mui/system/styleFunctionSx */
+
+/*! @mui/system/useThemeProps */
+
+/*! @mui/utils */
+
+/*! @mui/utils/HTMLElementType */
+
+/*! @mui/utils/capitalize */
+
+/*! @mui/utils/chainPropTypes */
+
+/*! @mui/utils/clamp */
+
+/*! @mui/utils/composeClasses */
+
+/*! @mui/utils/debounce */
+
+/*! @mui/utils/deepmerge */
+
+/*! @mui/utils/elementAcceptingRef */
+
+/*! @mui/utils/elementTypeAcceptingRef */
+
+/*! @mui/utils/formatMuiErrorMessage */
+
+/*! @mui/utils/generateUtilityClass */
+
+/*! @mui/utils/generateUtilityClasses */
+
+/*! @mui/utils/getDisplayName */
+
+/*! @mui/utils/getScrollbarSize */
+
+/*! @mui/utils/integerPropType */
+
+/*! @mui/utils/isMuiElement */
+
+/*! @mui/utils/ownerDocument */
+
+/*! @mui/utils/ownerWindow */
+
+/*! @mui/utils/refType */
+
+/*! @mui/utils/resolveProps */
+
+/*! @mui/utils/useControlled */
+
+/*! @mui/utils/useEnhancedEffect */
+
+/*! @mui/utils/useForkRef */
+
+/*! @mui/utils/useId */
+
+/*! @mui/utils/useTimeout */
+
+/*! @remix-run/router */
+
+/*! clsx */
+
+/*! hoist-non-react-statics */
+
+/*! object-assign */
+
+/*! prop-types */
+
+/*! react */
+
+/*! react-dom */
+
+/*! react-dom/client */
+
+/*! react-is */
+
+/*! react-router */
+
+/*! react-router-dom */
+
+/*! react-transition-group */
+
+/*! react/jsx-runtime */
+
+/*! scheduler */
+
+/*! stylis */
+
 /*!*********************!*\
   !*** ./src/App.jsx ***!
   \*********************/
@@ -54,6 +696,14 @@
   !*** ./src/pages/Root10.jsx ***!
   \******************************/
 
+/*!***********************************!*\
+  !*** ./src/pages/Page.module.css ***!
+  \***********************************/
+
+/*!***********************************!*\
+  !*** ./src/pages/Root.module.css ***!
+  \***********************************/
+
 /*!************************************!*\
   !*** ./src/components/Actions.jsx ***!
   \************************************/
@@ -62,12 +712,52 @@
   !*** ./src/components/Content.jsx ***!
   \************************************/
 
+/*!************************************!*\
+  !*** ./src/pages/Root1.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root2.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root3.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root4.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root5.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root6.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root7.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root8.module.css ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/pages/Root9.module.css ***!
+  \************************************/
+
 /*!*************************************!*\
   !*** ./node_modules/react/index.js ***!
   \*************************************/
 
 /*!*************************************!*\
   !*** ./src/components/Content1.jsx ***!
+  \*************************************/
+
+/*!*************************************!*\
+  !*** ./src/pages/Root10.module.css ***!
   \*************************************/
 
 /*!***************************************!*\
@@ -122,6 +812,14 @@
   !*** ./node_modules/stylis/src/Parser.js ***!
   \*******************************************/
 
+/*!*******************************************!*\
+  !*** ./src/components/Actions.module.css ***!
+  \*******************************************/
+
+/*!*******************************************!*\
+  !*** ./src/components/Content.module.css ***!
+  \*******************************************/
+
 /*!********************************************!*\
   !*** ./node_modules/prop-types/lib/has.js ***!
   \********************************************/
@@ -132,6 +830,10 @@
 
 /*!********************************************!*\
   !*** ./src/components/AnalyticsButton.jsx ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./src/components/Content1.module.css ***!
   \********************************************/
 
 /*!********************************************!*\
@@ -170,6 +872,10 @@
   !*** ./src/components/AnalyticsButtons1.jsx ***!
   \**********************************************/
 
+/*!**********************************************!*\
+  !*** ./src/components/Navigation.module.css ***!
+  \**********************************************/
+
 /*!***********************************************!*\
   !*** ./node_modules/@mui/system/esm/merge.js ***!
   \***********************************************/
@@ -184,6 +890,14 @@
 
 /*!***********************************************!*\
   !*** ./node_modules/stylis/src/Serializer.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./src/components/AuthButtons.module.css ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./src/components/ContactInfo.module.css ***!
   \***********************************************/
 
 /*!************************************************!*\
@@ -250,6 +964,10 @@
   !*** ./node_modules/react-router/dist/index.js ***!
   \*************************************************/
 
+/*!*************************************************!*\
+  !*** ./src/components/FormContainer.module.css ***!
+  \*************************************************/
+
 /*!**************************************************!*\
   !*** ./node_modules/@mui/material/colors/red.js ***!
   \**************************************************/
@@ -294,6 +1012,18 @@
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
 
+/*!***************************************************!*\
+  !*** ./src/components/AnalyticsButton.module.css ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./src/components/HumidityDetails.module.css ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./src/components/NewPasswordForm.module.css ***!
+  \***************************************************/
+
 /*!****************************************************!*\
   !*** ./node_modules/@mui/material/colors/green.js ***!
   \****************************************************/
@@ -304,6 +1034,18 @@
 
 /*!****************************************************!*\
   !*** ./node_modules/@mui/utils/refType/refType.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/components/AnalyticsButton1.module.css ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/components/AnalyticsButtons.module.css ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/components/TemperatureGraph.module.css ***!
   \****************************************************/
 
 /*!*****************************************************!*\
@@ -339,11 +1081,19 @@
   \*****************************************************/
 
 /*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
   !*** ./node_modules/react-router-dom/dist/index.js ***!
   \*****************************************************/
 
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/components/AnalyticsButtons1.module.css ***!
   \*****************************************************/
 
 /*!******************************************************!*\
@@ -587,6 +1337,10 @@
   \************************************************************/
 
 /*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \************************************************************/
+
+/*!************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
 
@@ -668,6 +1422,10 @@
 
 /*!***************************************************************!*\
   !*** ./node_modules/react-transition-group/esm/Transition.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
   \***************************************************************/
 
 /*!****************************************************************!*\
@@ -806,6 +1564,10 @@
   !*** ./node_modules/react-transition-group/esm/utils/PropTypes.js ***!
   \********************************************************************/
 
+/*!********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
+  \********************************************************************/
+
 /*!*********************************************************************!*\
   !*** ./node_modules/@emotion/unitless/dist/emotion-unitless.esm.js ***!
   \*********************************************************************/
@@ -824,6 +1586,10 @@
 
 /*!*********************************************************************!*\
   !*** ./node_modules/@mui/system/esm/useThemeProps/useThemeProps.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
   \*********************************************************************/
 
 /*!**********************************************************************!*\
@@ -860,6 +1626,10 @@
 
 /*!**********************************************************************!*\
   !*** ./node_modules/@mui/utils/useEventCallback/useEventCallback.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
   \**********************************************************************/
 
 /*!***********************************************************************!*\
@@ -906,6 +1676,14 @@
   !*** ./node_modules/@mui/system/esm/styleFunctionSx/styleFunctionSx.js ***!
   \*************************************************************************/
 
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Page.module.css ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root.module.css ***!
+  \*************************************************************************/
+
 /*!**************************************************************************!*\
   !*** ./node_modules/@mui/material/OutlinedInput/outlinedInputClasses.js ***!
   \**************************************************************************/
@@ -913,6 +1691,46 @@
 /*!**************************************************************************!*\
   !*** ./node_modules/@mui/utils/ClassNameGenerator/ClassNameGenerator.js ***!
   \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root1.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root2.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root3.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root4.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root5.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root6.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root7.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root8.module.css ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root9.module.css ***!
+  \**************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root10.module.css ***!
+  \***************************************************************************/
 
 /*!***************************************************************************!*\
   !*** ./node_modules/react-transition-group/esm/TransitionGroupContext.js ***!
@@ -924,6 +1742,10 @@
 
 /*!****************************************************************************!*\
   !*** ./node_modules/@mui/utils/elementAcceptingRef/elementAcceptingRef.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
   \****************************************************************************/
 
 /*!*****************************************************************************!*\
@@ -962,6 +1784,14 @@
   !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
   \*********************************************************************************/
 
+/*!*********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Actions.module.css ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Content.module.css ***!
+  \*********************************************************************************/
+
 /*!**********************************************************************************!*\
   !*** ./node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js ***!
   \**********************************************************************************/
@@ -971,7 +1801,15 @@
   \**********************************************************************************/
 
 /*!**********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Content1.module.css ***!
+  \**********************************************************************************/
+
+/*!**********************************************************************************!*\
   !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \**********************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
   \**********************************************************************************/
 
 /*!***********************************************************************************!*\
@@ -986,9 +1824,53 @@
   !*** ./node_modules/@mui/utils/elementTypeAcceptingRef/elementTypeAcceptingRef.js ***!
   \************************************************************************************/
 
+/*!************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Navigation.module.css ***!
+  \************************************************************************************/
+
+/*!*************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AuthButtons.module.css ***!
+  \*************************************************************************************/
+
+/*!*************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/ContactInfo.module.css ***!
+  \*************************************************************************************/
+
 /*!**************************************************************************************!*\
   !*** ./node_modules/@mui/styled-engine/StyledEngineProvider/StyledEngineProvider.js ***!
   \**************************************************************************************/
+
+/*!***************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/FormContainer.module.css ***!
+  \***************************************************************************************/
+
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButton.module.css ***!
+  \*****************************************************************************************/
+
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/HumidityDetails.module.css ***!
+  \*****************************************************************************************/
+
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/NewPasswordForm.module.css ***!
+  \*****************************************************************************************/
+
+/*!******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButton1.module.css ***!
+  \******************************************************************************************/
+
+/*!******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButtons.module.css ***!
+  \******************************************************************************************/
+
+/*!******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/TemperatureGraph.module.css ***!
+  \******************************************************************************************/
+
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButtons1.module.css ***!
+  \*******************************************************************************************/
 
 /*!************************************************************************************************!*\
   !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js ***!
@@ -1001,3 +1883,99 @@
 /*!***********************************************************************************************************************************!*\
   !*** ./node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js ***!
   \***********************************************************************************************************************************/
+
+/**
+ * @license React
+ * react-dom.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react-jsx-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * scheduler.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @remix-run/router v1.17.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * Checks if an event is supported in the current execution environment.
+ *
+ * NOTE: This will not work correctly for non-generic events such as `change`,
+ * `reset`, `load`, `error`, and `select`.
+ *
+ * Borrows from Modernizr.
+ *
+ * @param {string} eventNameSuffix Event name, e.g. "click".
+ * @return {boolean} True if the event is supported.
+ * @internal
+ * @license Modernizr 3.0.0pre (Custom Build) | MIT
+ */
+
+/**
+ * React Router DOM v6.24.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.24.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */

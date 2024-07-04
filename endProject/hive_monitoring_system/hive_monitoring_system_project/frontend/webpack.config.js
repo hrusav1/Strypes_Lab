@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.jsx",  // Changed to .jsx if your entry file is JSX
@@ -9,6 +10,7 @@ module.exports = {
     filename: "[name].js",
     publicPath: '/static/frontend/',  // Add this line
   },
+  devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx'],
   },
@@ -40,6 +42,11 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'public', to: 'public' }
+      ],
     }),
   ],
   devServer: {
