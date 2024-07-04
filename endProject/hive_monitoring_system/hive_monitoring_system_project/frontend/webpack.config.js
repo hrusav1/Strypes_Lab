@@ -3,9 +3,13 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
+  mode: 'development', // or 'production' based on your environment
   output: {
     path: path.resolve(__dirname, "./static/frontend"),
     filename: "[name].js",
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
@@ -23,10 +27,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      "process.env": {
-        // This has effect on the react lib size
-        NODE_ENV: JSON.stringify("production"),
-      },
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
   ],
 };

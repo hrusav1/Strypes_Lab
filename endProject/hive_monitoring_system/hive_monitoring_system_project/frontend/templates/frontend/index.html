@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name='viewport' content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000">
+        <meta name="description" content="Web site created using Locofy">
         <title>Hive Monitor</title>
         {% load static %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -10,14 +12,13 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
-        <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}"
-        />
+        <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
+        <link rel="icon" href="{% static 'frontend/public/favicon.ico' %}">
+        <!-- If you want to use the vite.svg icon, you'll need to move it to your static files and update the path -->
+        <!-- <link rel="icon" type="image/svg+xml" href="{% static 'images/vite.svg' %}"> -->
     </head>
     <body>
-        <div id="main">
-            <div id="app"></div>
-          </div>
-      
+        <div id="root"></div>
         <script src="{% static "frontend/main.js" %}"></script>
     </body>
 </html>
