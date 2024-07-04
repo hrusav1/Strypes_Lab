@@ -1,0 +1,916 @@
+.humidity {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 1;
+}
+.humidityWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid);
+  text-align: center;
+  font-size: var(--font-size-17xl);
+}
+.unitIcon,
+.value {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.value {
+  flex: 1;
+}
+.unitIcon {
+  width: 11.1px;
+  height: 1px;
+}
+.humidityUnit,
+.humidityValue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs-3) 0 0;
+}
+.humidityValue {
+  width: 59px;
+  flex-direction: row;
+  padding: 0 0 var(--padding-2xs-6);
+  box-sizing: border-box;
+  gap: var(--gap-3xs-2);
+}
+.humidityTitleValues {
+  flex: 1;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.humidityIndicatorsIcon {
+  width: 11.1px;
+  height: 1px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.humidityIconsValues {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+}
+.humidityNameValues,
+.humidityValuesTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.humidityNameValues {
+  flex: 1;
+  gap: var(--gap-3xs-2);
+}
+.humidityValuesTitle {
+  width: 70px;
+  padding: 0 var(--padding-2xs) var(--padding-base-7);
+  box-sizing: border-box;
+}
+.div,
+.vectorIcon {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.div {
+  flex: 1;
+}
+.vectorIcon {
+  width: 11.1px;
+  height: 1px;
+}
+.humidityValuesTitle1,
+.parent,
+.vectorWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vectorWrapper {
+  flex-direction: column;
+  padding: var(--padding-3xs-4) 0 0;
+}
+.humidityValuesTitle1,
+.parent {
+  flex-direction: row;
+}
+.parent {
+  flex: 1;
+  gap: var(--gap-3xs-2);
+}
+.humidityValuesTitle1 {
+  width: 70px;
+  padding: 0 var(--padding-2xs) var(--padding-base-7);
+  box-sizing: border-box;
+}
+.div1,
+.vectorIcon1 {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.div1 {
+  flex: 1;
+}
+.vectorIcon1 {
+  width: 11.1px;
+  height: 1px;
+}
+.group,
+.humidityValuesTitle2,
+.vectorContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vectorContainer {
+  flex-direction: column;
+  padding: var(--padding-3xs-5) 0 0;
+}
+.group,
+.humidityValuesTitle2 {
+  flex-direction: row;
+}
+.group {
+  flex: 1;
+  gap: var(--gap-3xs-2);
+}
+.humidityValuesTitle2 {
+  width: 70px;
+  padding: 0 var(--padding-2xs) var(--padding-base-8);
+  box-sizing: border-box;
+}
+.chartLabel {
+  width: 14.8px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.coordinateXIcon,
+.coordinateYIcon {
+  position: absolute;
+  top: 0;
+  left: 11.1px;
+  width: 1px;
+  height: 7.3px;
+  z-index: 1;
+}
+.coordinateYIcon {
+  left: 0;
+  width: 11.1px;
+  height: 1px;
+}
+.labelCoordinates {
+  width: 12.1px;
+  height: 7.3px;
+  position: relative;
+}
+.labelPosition {
+  width: 29.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) var(--padding-mid) 0 0;
+  box-sizing: border-box;
+}
+.barsIcon {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 1;
+}
+.chartBars {
+  width: 18.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) var(--padding-mid) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon2 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 1;
+}
+.chartBars1 {
+  width: 18.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) var(--padding-mid) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon3 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 1;
+}
+.chartBars2 {
+  width: 18.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) var(--padding-mid) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon4 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) var(--padding-12xl) 0 0;
+}
+.vectorIcon5 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars4 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon6 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars5 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon7 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars6 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon8 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars7 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon9 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars8 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon10 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars9 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon11 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars10 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon12 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars11 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon13 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars12 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon14 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars13 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon15 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars14 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon16 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars15 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon17 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars16 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon18 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars17 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon19 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars18 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon20 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars19 {
+  width: 46.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon21 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars20 {
+  width: 46.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+  box-sizing: border-box;
+}
+.vectorIcon22 {
+  width: 1px;
+  height: 7.3px;
+  position: relative;
+  z-index: 2;
+}
+.chartBars21 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-4) 0 0;
+}
+.chartContent,
+.chartElements {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.chartElements {
+  flex: 1;
+  justify-content: center;
+  gap: var(--gap-3xs-2);
+}
+.chartContent {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.dataPoints,
+.dataPoints1,
+.dataPoints2,
+.dataPoints3 {
+  width: 14.8px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.points {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints4 {
+  width: 25.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+}
+.div2 {
+  width: 22.1px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints5 {
+  flex: 0.6552;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lgi) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div3 {
+  width: 24px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints6 {
+  flex: 0.7126;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div4 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints7 {
+  flex: 0.7414;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div5 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints8 {
+  flex: 0.7765;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mini) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div6 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints9 {
+  flex: 0.7548;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div7 {
+  width: 25.8px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints10 {
+  flex: 0.7701;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mini) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div8 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints11 {
+  flex: 0.7989;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div9 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints12 {
+  flex: 0.8319;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-smi) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div10 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints13 {
+  flex: 0.8093;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div11 {
+  width: 27.7px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints14 {
+  flex: 0.7606;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div12 {
+  width: 24px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints15 {
+  flex: 0.7345;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div13 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints16 {
+  flex: 0.7759;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mini) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div14 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints17 {
+  flex: 0.7994;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div15 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.dataPoints18 {
+  flex: 0.8087;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div16 {
+  width: 27.7px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints19 {
+  flex: 0.7606;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div17 {
+  width: 24px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints20 {
+  flex: 0.7345;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 0;
+  box-sizing: border-box;
+  min-width: 29px;
+}
+.div18 {
+  width: 27.7px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.dataPoints21 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+  min-width: 23px;
+}
+.dataPoints22 {
+  width: 27.7px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.chartData {
+  width: 1116.9px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-sm-1);
+  text-align: center;
+}
+.chartContainer,
+.chartData,
+.humidityChart,
+.humidityDetails {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.chartContainer {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-4xs-8);
+}
+.humidityChart,
+.humidityDetails {
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.humidityChart {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-4xl);
+}
+.humidityDetails {
+  width: 1188.5px;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-xl);
+  gap: var(--gap-mini-7);
+  text-align: right;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1350px) {
+  .chartLabel {
+    width: 100%;
+    height: 14.8px;
+  }
+  .chartElements {
+    flex-wrap: wrap;
+  }
+  .dataPoints,
+  .dataPoints1,
+  .dataPoints2,
+  .dataPoints3 {
+    width: 100%;
+    height: 14.8px;
+  }
+  .chartData {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 900px) {
+  .humidity {
+    font-size: var(--font-size-10xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .humidity {
+    font-size: var(--font-size-3xl);
+  }
+  .dataPoints10,
+  .dataPoints11,
+  .dataPoints12,
+  .dataPoints13,
+  .dataPoints14,
+  .dataPoints15,
+  .dataPoints16,
+  .dataPoints17,
+  .dataPoints18,
+  .dataPoints19,
+  .dataPoints20,
+  .dataPoints5,
+  .dataPoints6,
+  .dataPoints7,
+  .dataPoints8,
+  .dataPoints9 {
+    flex: 1;
+  }
+}

@@ -2,11 +2,12 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.js",
-  mode: 'development', // or 'production' based on your environment
+  entry: "./src/index.jsx",  // Changed to .jsx if your entry file is JSX
+  mode: process.env.NODE_ENV || 'development',
   output: {
     path: path.resolve(__dirname, "./static/frontend"),
     filename: "[name].js",
+    publicPath: '/static/frontend/',  // Add this line
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -14,11 +15,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,  // Changed to support both .js and .jsx
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
         },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
@@ -30,4 +42,11 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
   ],
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './dist',
+  },
+  stats: {
+    errorDetails: true,
+  },
 };

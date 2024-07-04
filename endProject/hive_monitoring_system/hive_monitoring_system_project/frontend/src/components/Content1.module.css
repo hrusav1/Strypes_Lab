@@ -1,0 +1,172 @@
+.loginForm {
+  width: 357px;
+  height: 275px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  display: none;
+  max-width: 100%;
+}
+.password,
+.username {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 51.6px;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  z-index: 1;
+}
+.button1,
+.login {
+  position: relative;
+}
+.button1 {
+  height: 23px;
+  width: 92px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.login {
+  flex: 1;
+  z-index: 1;
+}
+.button {
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  padding: var(--padding-10xs) 0 var(--padding-11xs) var(--padding-12xs);
+}
+.button,
+.buttonSet,
+.loginButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.loginButton {
+  flex: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+.buttonSet {
+  align-self: stretch;
+  padding: 0 var(--padding-43xl) 0 var(--padding-35xl);
+}
+.button2 {
+  height: 23px;
+  width: 92px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.forgotpass {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.buttonSet1,
+.forgotPassButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.forgotPassButton {
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  padding: var(--padding-10xs) 0 var(--padding-11xs);
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 1;
+}
+.buttonSet1 {
+  align-self: stretch;
+  padding: 0 var(--padding-43xl) 0 var(--padding-35xl);
+}
+.button3,
+.home {
+  position: relative;
+}
+.button3 {
+  height: 23px;
+  width: 92px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.home {
+  flex: 1;
+  z-index: 1;
+}
+.homeButton {
+  width: 92px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 var(--padding-11xs);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}
+.buttonSet2 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-34xl);
+}
+.actions,
+.buttonSet2,
+.buttons,
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttons {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-smi-1);
+}
+.actions,
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+}
+.content {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  flex-direction: column;
+  padding: var(--padding-17xl) var(--padding-54xl) var(--padding-6xs)
+    var(--padding-56xl);
+  box-sizing: border-box;
+  gap: var(--gap-4xl-4);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .content {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

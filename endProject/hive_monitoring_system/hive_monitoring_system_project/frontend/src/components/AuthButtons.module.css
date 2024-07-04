@@ -1,0 +1,116 @@
+.button1,
+.homeForm {
+  position: relative;
+  display: none;
+}
+.homeForm {
+  height: 370px;
+  width: 357px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  max-width: 100%;
+}
+.button1 {
+  height: 66px;
+  width: 130.4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+}
+.alreadyAUser {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button,
+.loginButton {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  padding: var(--padding-4xs) 0 var(--padding-4xs) var(--padding-12xs);
+}
+.loginButton {
+  min-width: 84px;
+  cursor: pointer;
+  z-index: 1;
+}
+.button3 {
+  height: 66px;
+  width: 130.4px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.register {
+  height: 48px;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.button2 {
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  padding: var(--padding-4xs) 0 var(--padding-4xs) var(--padding-12xs);
+}
+.authButtons,
+.button2,
+.registerButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.registerButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex: 1;
+  min-width: 84px;
+  z-index: 1;
+}
+.authButtons {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  flex-wrap: wrap;
+  padding: var(--padding-37xl) var(--padding-10xl) var(--padding-37xl)
+    var(--padding-11xl);
+  box-sizing: border-box;
+  gap: var(--gap-17xl-6);
+  min-height: 370px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .alreadyAUser,
+  .register {
+    font-size: var(--font-size-base);
+  }
+  .authButtons {
+    gap: var(--gap-lg);
+  }
+}

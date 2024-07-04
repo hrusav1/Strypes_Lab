@@ -1,0 +1,169 @@
+.frameChild {
+  width: 403px;
+  height: 1014px;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  display: none;
+  max-width: 100%;
+}
+.rectangleParent,
+.rootInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  padding: var(--padding-5xs) var(--padding-20xl) var(--padding-14xl-7);
+  gap: var(--gap-17xl-7);
+}
+.rootInner {
+  width: 403px;
+  padding: var(--padding-12xs) 0 0;
+}
+.frameItem {
+  align-self: stretch;
+  height: 1014px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  display: none;
+}
+.apiary,
+.button,
+.frameItem {
+  position: relative;
+}
+.apiary {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  min-width: 110px;
+  z-index: 1;
+}
+.button {
+  height: 88px;
+  width: 238px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.editApiary {
+  height: 79px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.editApiaryButton,
+.editApiaryButtonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.editApiaryButton {
+  width: 238px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  justify-content: flex-start;
+  padding: var(--padding-4xs) 0 0 var(--padding-5xs);
+  box-sizing: border-box;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 1;
+}
+.editApiaryButtonWrapper {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-mid);
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.rectangleGroup,
+.root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.rectangleGroup {
+  width: 1392px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  flex-direction: column;
+  padding: var(--padding-6xs) 0 var(--padding-base);
+  gap: 855px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.root {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-13xl) var(--padding-mid) var(--padding-14xl);
+  gap: var(--gap-26xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1800px) {
+  .root {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .rectangleParent {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+  .rectangleGroup {
+    gap: 427px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .rectangleParent {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .apiary {
+    font-size: var(--font-size-10xl);
+  }
+  .rectangleGroup {
+    gap: 214px;
+  }
+  .root {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    gap: var(--gap-lg);
+  }
+  .apiary {
+    font-size: var(--font-size-3xl);
+  }
+  .rectangleGroup {
+    gap: 107px;
+  }
+}

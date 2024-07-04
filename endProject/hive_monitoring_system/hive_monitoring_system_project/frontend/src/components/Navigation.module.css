@@ -1,0 +1,82 @@
+.button1,
+.login {
+  position: relative;
+}
+.button1 {
+  height: 23px;
+  width: 92px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.login {
+  flex: 1;
+  z-index: 1;
+}
+.button,
+.resetButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button {
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  padding: var(--padding-10xs) 0 var(--padding-11xs) var(--padding-12xs);
+}
+.resetButton {
+  align-self: stretch;
+  cursor: pointer;
+  z-index: 1;
+}
+.button2,
+.home {
+  position: relative;
+}
+.button2 {
+  height: 23px;
+  width: 92px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.home {
+  flex: 1;
+  z-index: 1;
+}
+.returnButton {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  flex-direction: row;
+  padding: var(--padding-10xs) 0 var(--padding-11xs) var(--padding-12xs);
+  cursor: pointer;
+  z-index: 1;
+}
+.buttons,
+.navigation,
+.returnButton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttons {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.navigation {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-40xl) 0 var(--padding-39xl);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,290 @@
+.frameChild,
+.rectangleParent {
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+}
+.frameChild {
+  width: 403px;
+  height: 1014px;
+  position: relative;
+  display: none;
+  max-width: 100%;
+}
+.rectangleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-20xl) var(--padding-14xl-7);
+  gap: var(--gap-17xl-7);
+}
+.apiaryInfoChild,
+.rectangleParent,
+.rootInner {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rootInner {
+  width: 403px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.apiaryInfoChild {
+  width: 1392px;
+  height: 1014px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  display: none;
+}
+.apiary {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 110px;
+  z-index: 1;
+}
+.apiaryTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.amountOfHives,
+.numberOfHivesTextbox {
+  position: relative;
+  z-index: 1;
+}
+.numberOfHivesTextbox {
+  align-self: stretch;
+  height: 42px;
+  border-radius: var(--br-base);
+  background-color: var(--color-white);
+}
+.hiveCount,
+.hiveCountInput {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.hiveCountInput {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  min-width: 214px;
+}
+.hiveCount {
+  width: 671px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 0 var(--padding-xl) var(--padding-xl);
+  gap: var(--gap-26xl);
+}
+.latitude,
+.longitude {
+  position: relative;
+  z-index: 1;
+}
+.button,
+.save {
+  position: relative;
+}
+.button {
+  height: 43px;
+  width: 151px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  display: none;
+}
+.save {
+  flex: 1;
+  z-index: 1;
+}
+.apiarySaveButton,
+.coordinates,
+.longitudeInput {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.apiarySaveButton {
+  width: 151px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xs);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+}
+.coordinates,
+.longitudeInput {
+  flex-direction: column;
+}
+.longitudeInput {
+  gap: 61px;
+}
+.coordinates {
+  gap: var(--gap-32xl);
+  min-width: 171px;
+}
+.numberOfHivesTextbox1,
+.numberOfHivesTextbox2 {
+  align-self: stretch;
+  height: 42px;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-white);
+  z-index: 1;
+}
+.inputDuplicate,
+.inputPair {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.inputPair {
+  align-self: stretch;
+  display: flex;
+  gap: var(--gap-32xl);
+}
+.inputDuplicate {
+  width: 330px;
+  padding: var(--padding-11xs) 0 0;
+  min-width: 330px;
+  max-width: 100%;
+}
+.apiaryInfo,
+.inputDuplicate,
+.location,
+.root {
+  display: flex;
+  box-sizing: border-box;
+}
+.location {
+  width: 671px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0 0 var(--padding-xl);
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.apiaryInfo,
+.root {
+  justify-content: flex-start;
+}
+.apiaryInfo {
+  width: 1392px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-6xs) 694px 579px 0;
+  gap: 36px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.root {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-13xl) var(--padding-mid) var(--padding-14xl);
+  gap: var(--gap-26xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1800px) {
+  .root {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .apiaryInfo,
+  .rectangleParent {
+    padding-top: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .rectangleParent {
+    padding-bottom: var(--padding-3xl);
+  }
+  .apiaryInfo {
+    padding-right: 347px;
+    padding-bottom: 376px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .rectangleParent {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .amountOfHives,
+  .apiary {
+    font-size: var(--font-size-10xl);
+  }
+  .hiveCount {
+    flex-wrap: wrap;
+    gap: var(--gap-3xl);
+  }
+  .latitude,
+  .longitude,
+  .save {
+    font-size: var(--font-size-10xl);
+  }
+  .coordinates,
+  .inputDuplicate {
+    flex: 1;
+  }
+  .location {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .apiaryInfo {
+    gap: var(--gap-lg);
+    padding-right: 173px;
+    padding-bottom: 244px;
+    box-sizing: border-box;
+  }
+  .root {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    gap: var(--gap-lg);
+  }
+  .amountOfHives,
+  .apiary,
+  .latitude,
+  .longitude,
+  .save {
+    font-size: var(--font-size-3xl);
+  }
+  .inputPair {
+    gap: var(--gap-6xl);
+  }
+  .apiaryInfo {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,66 @@
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  background-color: var(--color-dimgray);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.profile {
+  position: absolute;
+  top: calc(50% - 22.15px);
+  left: calc(50% - 157.75px);
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 319px;
+  height: 44px;
+  z-index: 1;
+}
+.userProfileFocusStreamlineIcon {
+  position: absolute;
+  top: 18px;
+  left: 11px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  z-index: 1;
+}
+.profileButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-dimgray);
+  height: 80.3px;
+  flex: 1;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xs);
+  max-width: 100%;
+  z-index: 1;
+}
+.analyticsButtons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-4xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .profile {
+    font-size: var(--font-size-10xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .profile {
+    font-size: var(--font-size-3xl);
+  }
+}

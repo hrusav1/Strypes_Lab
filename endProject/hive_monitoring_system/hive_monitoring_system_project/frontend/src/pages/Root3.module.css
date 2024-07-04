@@ -1,0 +1,207 @@
+.frameChild {
+  width: 403px;
+  height: 1014px;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  display: none;
+  max-width: 100%;
+}
+.rectangleParent,
+.rootInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  padding: var(--padding-5xs) var(--padding-20xl) var(--padding-14xl-7);
+  gap: var(--gap-17xl-7);
+}
+.rootInner {
+  width: 403px;
+  padding: var(--padding-12xs) 0 0;
+}
+.frameItem {
+  align-self: stretch;
+  height: 1014px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  display: none;
+}
+.analytics {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  z-index: 1;
+}
+.honeyProductionPrediction {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.honeyProductionTextbox {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray);
+  max-width: 100%;
+  z-index: 1;
+}
+.predictions {
+  align-self: stretch;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.hiveHealthPrediction {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.hiveHelathPredictionTextbox {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray);
+  max-width: 100%;
+  z-index: 1;
+}
+.honeyProductionPredictionParent,
+.predictions1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.predictions1 {
+  align-self: stretch;
+  height: 250px;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.honeyProductionPredictionParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 41.3px;
+}
+.frameWrapper {
+  width: 1296px;
+  flex-direction: row;
+  padding: 0 78px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.frameWrapper,
+.rectangleGroup,
+.root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.rectangleGroup {
+  width: 1392px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  flex-direction: column;
+  padding: var(--padding-6xs) 0 147px;
+  gap: var(--gap-81xl);
+  max-width: 100%;
+}
+.root {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-13xl) var(--padding-mid) var(--padding-14xl);
+  gap: var(--gap-26xl);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1800px) {
+  .root {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .rectangleParent {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+  .frameWrapper {
+    padding-left: var(--padding-20xl);
+    padding-right: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+  .rectangleGroup {
+    padding-top: var(--padding-xl);
+    padding-bottom: 96px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .rectangleParent {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .analytics,
+  .hiveHealthPrediction,
+  .honeyProductionPrediction {
+    font-size: var(--font-size-10xl);
+  }
+  .honeyProductionPredictionParent {
+    gap: 21px;
+  }
+  .rectangleGroup {
+    gap: var(--gap-31xl);
+    padding-bottom: var(--padding-43xl);
+    box-sizing: border-box;
+  }
+  .root {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    gap: var(--gap-lg);
+  }
+  .analytics,
+  .hiveHealthPrediction,
+  .honeyProductionPrediction {
+    font-size: var(--font-size-3xl);
+  }
+  .rectangleGroup {
+    gap: var(--gap-6xl);
+  }
+}
