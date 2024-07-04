@@ -6,7 +6,10 @@ import AnalyticsButton from "../components/AnalyticsButton";
 import AnalyticsButtons from "../components/AnalyticsButtons";
 import styles from "./Root.module.css";
 
+
 const Root = () => {
+  console.log(styles); // Check if it contains the 'root' property
+
   const navigate = useNavigate();
 
   const onAnalyticsButtonContainerClick = useCallback(() => {

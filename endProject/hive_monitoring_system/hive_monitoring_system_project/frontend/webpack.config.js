@@ -27,7 +27,21 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.module\.css$/,  // Use .module.css for CSS modules
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+            }
+          }
+        ],
+      },
+      {
+        test: /\.css$/,  // Regular CSS files
+        exclude: /\.module\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {

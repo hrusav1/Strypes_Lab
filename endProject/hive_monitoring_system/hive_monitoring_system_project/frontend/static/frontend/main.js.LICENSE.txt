@@ -4,57 +4,57 @@ object-assign
 @license MIT
 */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Actions.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Actions.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButton.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./AnalyticsButton.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButton1.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./AnalyticsButton1.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButtons.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./AnalyticsButtons.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./AnalyticsButtons1.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./AnalyticsButtons1.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./AuthButtons.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./AuthButtons.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./ContactInfo.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./ContactInfo.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Content.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Content.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Content1.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Content1.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./FormContainer.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./FormContainer.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./HumidityDetails.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./HumidityDetails.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Navigation.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Navigation.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./NewPasswordForm.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./NewPasswordForm.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Page.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Page.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root1.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root1.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root10.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root10.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root2.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root2.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root3.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root3.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root4.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root4.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root5.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root5.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root6.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root6.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root7.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root7.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root8.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root8.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./Root9.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Root9.module.css */
 
-/*! !!../../node_modules/css-loader/dist/cjs.js!./TemperatureGraph.module.css */
+/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./TemperatureGraph.module.css */
 
 /*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
 
@@ -1676,14 +1676,6 @@ object-assign
   !*** ./node_modules/@mui/system/esm/styleFunctionSx/styleFunctionSx.js ***!
   \*************************************************************************/
 
-/*!*************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Page.module.css ***!
-  \*************************************************************************/
-
-/*!*************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root.module.css ***!
-  \*************************************************************************/
-
 /*!**************************************************************************!*\
   !*** ./node_modules/@mui/material/OutlinedInput/outlinedInputClasses.js ***!
   \**************************************************************************/
@@ -1691,46 +1683,6 @@ object-assign
 /*!**************************************************************************!*\
   !*** ./node_modules/@mui/utils/ClassNameGenerator/ClassNameGenerator.js ***!
   \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root1.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root2.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root3.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root4.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root5.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root6.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root7.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root8.module.css ***!
-  \**************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root9.module.css ***!
-  \**************************************************************************/
-
-/*!***************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/Root10.module.css ***!
-  \***************************************************************************/
 
 /*!***************************************************************************!*\
   !*** ./node_modules/react-transition-group/esm/TransitionGroupContext.js ***!
@@ -1784,24 +1736,12 @@ object-assign
   !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
   \*********************************************************************************/
 
-/*!*********************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Actions.module.css ***!
-  \*********************************************************************************/
-
-/*!*********************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Content.module.css ***!
-  \*********************************************************************************/
-
 /*!**********************************************************************************!*\
   !*** ./node_modules/@emotion/react/dist/emotion-element-43c6fea0.browser.esm.js ***!
   \**********************************************************************************/
 
 /*!**********************************************************************************!*\
   !*** ./node_modules/@mui/utils/generateUtilityClasses/generateUtilityClasses.js ***!
-  \**********************************************************************************/
-
-/*!**********************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Content1.module.css ***!
   \**********************************************************************************/
 
 /*!**********************************************************************************!*\
@@ -1824,53 +1764,9 @@ object-assign
   !*** ./node_modules/@mui/utils/elementTypeAcceptingRef/elementTypeAcceptingRef.js ***!
   \************************************************************************************/
 
-/*!************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Navigation.module.css ***!
-  \************************************************************************************/
-
-/*!*************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AuthButtons.module.css ***!
-  \*************************************************************************************/
-
-/*!*************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/ContactInfo.module.css ***!
-  \*************************************************************************************/
-
 /*!**************************************************************************************!*\
   !*** ./node_modules/@mui/styled-engine/StyledEngineProvider/StyledEngineProvider.js ***!
   \**************************************************************************************/
-
-/*!***************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/FormContainer.module.css ***!
-  \***************************************************************************************/
-
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButton.module.css ***!
-  \*****************************************************************************************/
-
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/HumidityDetails.module.css ***!
-  \*****************************************************************************************/
-
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/NewPasswordForm.module.css ***!
-  \*****************************************************************************************/
-
-/*!******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButton1.module.css ***!
-  \******************************************************************************************/
-
-/*!******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButtons.module.css ***!
-  \******************************************************************************************/
-
-/*!******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/TemperatureGraph.module.css ***!
-  \******************************************************************************************/
-
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/AnalyticsButtons1.module.css ***!
-  \*******************************************************************************************/
 
 /*!************************************************************************************************!*\
   !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js ***!
@@ -1879,6 +1775,110 @@ object-assign
 /*!*****************************************************************************************************!*\
   !*** ./node_modules/@emotion/react/_isolated-hnrs/dist/emotion-react-_isolated-hnrs.browser.esm.js ***!
   \*****************************************************************************************************/
+
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Page.module.css ***!
+  \*****************************************************************************************************/
+
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root.module.css ***!
+  \*****************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root1.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root2.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root3.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root4.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root5.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root6.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root7.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root8.module.css ***!
+  \******************************************************************************************************/
+
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root9.module.css ***!
+  \******************************************************************************************************/
+
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/pages/Root10.module.css ***!
+  \*******************************************************************************************************/
+
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/Actions.module.css ***!
+  \*************************************************************************************************************/
+
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/Content.module.css ***!
+  \*************************************************************************************************************/
+
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/Content1.module.css ***!
+  \**************************************************************************************************************/
+
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/Navigation.module.css ***!
+  \****************************************************************************************************************/
+
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/AuthButtons.module.css ***!
+  \*****************************************************************************************************************/
+
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/ContactInfo.module.css ***!
+  \*****************************************************************************************************************/
+
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/FormContainer.module.css ***!
+  \*******************************************************************************************************************/
+
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/AnalyticsButton.module.css ***!
+  \*********************************************************************************************************************/
+
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/HumidityDetails.module.css ***!
+  \*********************************************************************************************************************/
+
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/NewPasswordForm.module.css ***!
+  \*********************************************************************************************************************/
+
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/AnalyticsButton1.module.css ***!
+  \**********************************************************************************************************************/
+
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/AnalyticsButtons.module.css ***!
+  \**********************************************************************************************************************/
+
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/TemperatureGraph.module.css ***!
+  \**********************************************************************************************************************/
+
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/components/AnalyticsButtons1.module.css ***!
+  \***********************************************************************************************************************/
 
 /*!***********************************************************************************************************************************!*\
   !*** ./node_modules/@emotion/use-insertion-effect-with-fallbacks/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js ***!
